@@ -24,7 +24,7 @@ This repository is intended for use as a [git-submodule](http://git-scm.com/docs
 
 `npm install` — Install all the dependencies.
 
-`npm run webpack` - Webpack task to watch and recompile when changes are detected.
+`npm run webpack` — Webpack task to watch and recompile when changes are detected.
 
 ----
 
