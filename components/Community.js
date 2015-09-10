@@ -24,14 +24,14 @@ export default class Community extends React.Component {
     let users = [];
 
     $.get(feed, (response) => {
-      for (var index = 0; index < this.props.source.displayCount; index++) {
+      for (let index = 0; index < this.props.source.displayCount; index++) {
         let thisTopic = response.topic_list.topics[index];
 
         thisTopic.slug = this.props.source.host + '/t/' + thisTopic.slug + '/' + thisTopic.id;
         entry.push(thisTopic);
       }
 
-      for (var index = 0; index < response.users.length; index++) {
+      for (let index = 0; index < response.users.length; index++) {
         let thisUser = response.users[index];
         thisUser.avatar_template = this.props.source.host + thisUser.avatar_template.replace('{size}', this.props.source.avatarSize);
         users.push(thisUser);
@@ -59,7 +59,7 @@ export default class Community extends React.Component {
 
   render() {
     let topicComponents = [];
-    for (var index = 0; index < this.state.allTopics.length; index++) {
+    for (let index = 0; index < this.state.allTopics.length; index++) {
       let thisTopic = this.state.allTopics[index];
 
       let thisUser = this.state.allUsers.filter((user) => {
