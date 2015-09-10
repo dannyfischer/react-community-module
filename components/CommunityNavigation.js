@@ -14,7 +14,8 @@ export default class CommunityNavigation extends React.Component {
           {this.props.tabList.map((tab) => {
             return (
               <CommunityNavigationTab
-                handleClick={this.handleClick.bind(this, tab)} isCurrent={(this.props.currentTab === tab.id)}
+                handleClick={this.handleClick.bind(this, tab)}
+                isCurrent={(this.props.currentTab === tab.id)}
                 key={tab.id}
                 name={tab.name}
                 url={tab.url}
