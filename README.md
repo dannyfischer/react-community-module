@@ -28,6 +28,8 @@ This repository is intended for use as a [git-submodule](http://git-scm.com/docs
 
 `npm run webpack` — Webpack task to watch and recompile when changes are detected.
 
+![](https://cloud.githubusercontent.com/assets/3680694/11577134/c4c280f6-9a1b-11e5-9181-7dafb805411a.gif)
+
 ----
 
 ### Notes
