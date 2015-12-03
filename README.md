@@ -22,6 +22,8 @@ Modular written in ES6 and compiled with Babel and Webpack.
 ### Usage
 This repository is intended for use as a [git-submodule](http://git-scm.com/docs/git-submodule) as part of the [main project](https://github.com/DannyFischer/hey.kreation.io).
 
+`git clone --recursive https://github.com/DannyFischer/hey.kreation.io.git && cd hey.kreation.io`
+
 `npm install` — Install all the dependencies.
 
 `npm run webpack` — Webpack task to watch and recompile when changes are detected.
